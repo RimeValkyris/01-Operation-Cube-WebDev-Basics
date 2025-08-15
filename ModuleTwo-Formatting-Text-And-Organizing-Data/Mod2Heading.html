@@ -153,3 +153,105 @@ HTML allows you to nest lists within other lists.
         </li>
         <li>Item 3</li>
     </ul>
+
+2.7 Tables
+2.7.1 What are HTML Tables
+    HTML tables are used to display data in a structured format, using rows and columns. 
+    They are created with the <table> tag, and each row is defined by the <tr> tag. Within each row, 
+    individual cells are defined using the <td> tag for data cells and the <th> tag for header cells.
+
+    <table>
+  <tr>
+    <td>Row 1, Column 1</td>
+    <td>Row 1, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 2, Column 1</td>
+    <td>Row 2, Column 2</td>
+  </tr>
+    </table>
+
+2.7.3 Adding Headers
+    To add headers to your table, use the <th> tag within the <tr> tag for each header cell. Header cells are typically displayed in bold and centered by default.
+    <table>
+  <tr>
+    <th>Header 1</th>
+    <th>Header 2</th>
+  </tr>
+  <tr>
+    <td>Row 1, Column 1</td>
+    <td>Row 1, Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 2, Column 1</td>
+    <td>Row 2, Column 2</td>
+  </tr>
+
+2.7.4 Merging Cells
+    To merge cells in a table, use the colspan attribute in the <td> or <th> tag. This allows a cell to span multiple columns.
+<table>
+  <tr>
+    <th rowspan="2">Product</th>
+    <th colspan="2">Price</th>
+  </tr>
+  <tr>
+    <th>Old</th>
+    <th>New</th>
+  </tr>
+  <tr>
+    <td>Product 1</td>
+    <td>$10.00</td>
+    <td>$12.00</td>
+  </tr>
+  <tr>
+    <td>Product 2</td>
+    <td>$15.00</td>
+    <td>$18.00</td>
+  </tr>
+</table>
+
+2.7.5 The <caption> Element
+    The <caption> element is used to provide a title or summary for a table. It is placed immediately after the <table> tag and is typically displayed above the table.
+    <table>
+  <caption>Product Pricing</caption>
+  <tr>
+    <th rowspan="2">Product</th>
+    <th colspan="2">Price</th>
+  </tr>
+  <tr>
+    <th>Old</th>
+    <th>New</th>
+  </tr>
+  <tr>
+    <td>Product 1</td>
+    <td>$10.00</td>
+    <td>$12.00</td>
+  </tr>
+  <tr>
+    <td>Product 2</td>
+    <td>$15.00</td>
+    <td>$18.00</td>
+  </tr>
+</table>
+
+2.7.6 The <table> Tag and Its Attributes
+
+    The <table> tag has several attributes that can be used to control the appearance and behavior of the table. Some common attributes include:
+    - border: Specifies the width of the table border.
+    - cellpadding: Specifies the space between the cell content and the cell border.
+    - cellspacing: Specifies the space between table cells.
+    - width: Specifies the width of the table.
+    - align: Specifies the alignment of the table within its container.
+    - height: Specifies the height of the table.
+    - bgcolor: Specifies the background color of the table.
+    Example:
+    <table border="1" cellpadding="5" cellspacing="0" width="100%">
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+      </tr>
+      <tr>
+        <td>Data 1</td>
+        <td>Data 2</td>
+      </tr>
+    </table>
