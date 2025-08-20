@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Exploring Visual and Interactive Elements</title>
+    </head>
+    <body>
+        <img src="https://edube.org/uploads/media/default/0001/03/mountain_landscape.jpg" 
+        alt="Mountain landscape" width="340" height="250">
+
+        <!-- Relative Path -->
+        <img src="Hissabeth.png" alt="A picture">
+
+      <!-- Video Example -->
+<video controls>
+   <source src="myvideo.mp4" type="video/mp4">
+   <source src="myvideo.webm" type="video/webm">
+   <p>Your browser does not support the video tag.</p>
+</video>
+
+<!-- Audio Example -->
+<audio controls>
+   <source src="myaudiofile.mp3" type="audio/mp3">
+   <source src="myaudiofile.ogg" type="audio/ogg">
+   <p>Your browser does not support the audio tag.</p>
+</audio>
+
+<!-- Responsive Videos -->
+<video poster="web-dev-picture.jpg" controls>
+  <source src="web-dev-video.mp4" type="video/mp4" media="(max-width: 600px)">
+  <source src="web-dev-video.webm" type="video/webm">
+</video>
+
+    </body>
+</html>
+
+<!-- 
+
+The src Attribute
+The src attribute specifies the source URL of the image that should be displayed.
+
+The alt Attribute
+The alt attribute provides alternative text that will be displayed if the image cannot be loaded. 
+It is also used by screen readers for visually impaired users.
+
+The width Attribute
+The width attribute specifies the width of the image. It can be defined in pixels 
+(e.g., width="340") or as a percentage of the containing element's width (e.g., width="50%").
+
+The height Attribute
+Similarly to width, the height specifies the height of the 
+image in pixels or as a percentage of its parent container.
+For example: height="250" or height="50%".
+
+
+3.1.3 Image Location
+
+Relative Path
+A relative path is a path that starts from the directory of the HTML file. For example:
+<img src="images/picture.jpg" alt="A picture">
+
+
+Absolute Path
+An absolute path is a path that starts from the root directory of the website. For example:
+<img src="https://example.com/images/picture.jpg" alt="A picture">
+
+3.1.4 Responsive Images: the srcset and sizes Attributes
+
+The srcset Attribute
+The srcset attribute allows you to specify a list of image files with different resolutions, sizes, and formats.
+
+The sizes Attribute
+The sizes attribute specifies the size of the image container in which the image will be displayed. In other words, 
+it tells the browser how much screen space the image will occupy on different devices.
+
+The srcset and sizes Attributes in Action
+By using srcset and sizes together, you can create 
+images that are optimized for different devices and screen sizes.
+
+<img src=sunflowers.jpg"
+     alt="Sunflowers in the sunset"
+     srcset="sunflowers-small.jpg 480w,
+             sunflowers-medium.jpg 800w,
+             sunflowers-large.jpg 1200w"
+     sizes="(max-width: 480px) 95vw,
+            (max-width: 800px) 45vw,
+            30vw">
+
+
+
+3.1.5 Other Image-Specific Attributes: border, hspace, vspace, and align
+
+In addition to the commonly used src, alt, width, and height attributes for images in HTML, 
+there are several other attributes that were historically used to modify an image's display.
+
+The border Attribute
+The border attribute specifies the width of the border around the image. For example:
+<img src="example.jpg" alt="Example image" border="2">
+
+The hspace and vspace Attributes
+The hspace and vspace attributes specify the horizontal and vertical space around the image, respectively. For example:
+<img src="example.jpg" alt="Example image" hspace="10" vspace="10">
+
+The align Attribute
+The align attribute allows for specifying the alignment of an image relative to surrounding content, 
+with values like left, right, and center. For example:
+<img src="example.jpg" alt="Example image" align="left">
+
+
+3.3.2 Ensuring Cross-Browser Compatibility
+It's important to note that different browsers support different video and audio codecs, which can impact the compatibility of media content across various devices.
+
+To ensure cross-browser compatibility, it's recommended to provide multiple formats of the same media file, 
+such as MP4 and WebM for video, and MP3 and Ogg for audio. 
+This can be achieved using the <source> element within the <video> and <audio> elements.
+
+
+3.3.4 Responsive Videos
+To create a responsive video using HTML, you can use the <video> element with the poster 
+    and controls attributes, 
+    and the <source> element with the media atribute.
+
+    <video poster="web-dev-picture.jpg" controls>
+  <source src="web-dev-video.mp4" type="video/mp4" media="(max-width: 600px)">
+  <source src="web-dev-video.webm" type="video/webm">
+</video>
+
+-->

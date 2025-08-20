@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form - Beyond the Basics</title>
+    </head>
+    <body>
+        <!-- Textarea Element -->
+         <p>THIS IS A TEXT AREA</p>
+        <label for="message">Message:</label>
+<textarea id="message" name="message" rows="4" cols="50"></textarea>
+
+
+<!--This is Select Area Element-->
+<p>THIS SELECT AREA ELEMENT</p>
+<label for="pasta">Pasta:</label>
+<select id="pasta" name="pasta">
+  <option value="spaghetti">Spaghetti</option>
+  <option value="penne">Penne</option>
+  <option value="lasagna">Lasagna</option>
+  <option value="farfalle">Farfalle</option>
+</select>
+
+<!--Button Element-->
+<p>BUTTONS ELEMENT</p>
+<button type="button" onclick="alert('Hello, World!')">Click me!</button>
+    </body>
+</html>
+
+
+<!--Field Set Element-->
+<p>Fieldset Element</p>
+<fieldset>
+  <legend>Shipping Address</legend>
+  <label for="address">Address:</label>
+  <input type="text" id="address" name="address">
+  <br>
+  <label for="city">City:</label>
+  <input type="text" id="city" name="city">
+  <br>
+  <label for="zip-code">ZIP Code:</label>
+  <input type="text" id="zip-code" name="zip-code">
+</fieldset>
+
+<!--Value Arrtibute pre-field input field-->
+<p>Value Attrivute Pre-Field Input field</p>
+<label for="first-name">First Name:</label>
+<input type="text" id="first-name" name="first-name" value="John">
+
+<!--Place Holder Attribute-->
+<p>Place Holder Attribute</p>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" placeholder="name@example.com">
+
+<!--MaxLength-->
+<p>Max Length</p>
+<input type="text" name="username" maxlength="20">
+
+<!--Min and Max-->
+<p>Min and Max</p>
+<input type="number" name="age" min="18" max="100">
+<!-- 
+
+3.5.1 Enhancing Forms with Key Elements: <textarea>, <select>, <button>, and <fieldset>
+
+The Textarea Element
+The <textarea> element creates a multi-line text input field, which allows users to 
+enter larger amounts of text. You can set the rows and cols attributes to control the visible size of 
+the textarea. 
+
+The Select Element
+The <select> element creates a dropdown list, used with <option> elements to define the available options. 
+You can use the multiple attribute
+to allow multiple selections, and the size attribute to control the number of visible options.
+
+The Button Element
+The <button> button element creates a clickable button that can be customized with JavaScript or used to submit or reset a form, 
+depending on its type attribute (e.g., submit, reset, or button). If the type attribute is omitted or set to "button", 
+it does not have any default behavior and can be controlled with JavaScript.
+
+The Fieldset Element
+The <fieldset> element creates a container used to group together related form elements. 
+It can be helpful in organizing complex forms with multiple sections. 
+The <legend> element can be used within a <fieldset> to provide a caption or title for the group.
+
+3.5.2 Mastering Form Attributes: value, placeholder, disabled, and readonly
+
+The Value Attribute
+The value attribute specifies the initial value of the input field. 
+When the form is loaded, this value will be pre-filled in the input field.
+
+The Placeholder Attribute
+The placeholder attribute specifies a hint that describes the 
+expected value of the input field. 
+
+3.5.3 Diving Deeper into Form-Specific Attributes: maxlength, min, max, autocomplete, and pattern
+
+The Maxlength Attribute
+maxlength limits the number of characters that can be entered into a text input field.
+
+The Min and Max Attributes
+min and max set the minimum and maximum values that can be entered 
+into number, range, date, and time input fields. 
+
+
+-->

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>HTML Forms</title>
+    </header>
+    <body>
+
+<form action="submit-form.php" method="POST">
+  <!-- Form elements/fields go here -->
+</form>
+
+<label for="email">Email:</label>
+<input type="email" id="email" name="useremail" required>
+
+    </body>
+</html>
+
+<!-- 
+3.4.2 The <form> Element
+To create a form, you must use the <form> element. Inside the <form> element, 
+    you can add various input fields, such as text input, radio buttons, checkboxes, and more.
+
+The <input> element is used to create different types of input fields used to collect user data. 
+It can be configured to accept various types of data, such as text, passwords, 
+numbers, and emails, among others, through the use of the type attribute.
+
+
+Common input types (the type attribute values) include:
+
+text – a single-line text input field, used for short text inputs such as names, email addresses, etc.
+email – a single-line text input field used specifically for entering and validating email addresses (the browser applies built-in validation to ensure that the user’s input is in the proper email format)
+url – a single-line text input field used specifically for entering, validating, and accepting only properly-formatted URLs;
+number – a single-line input field used specifically to validate and accept only numbers;
+password – a single-line text input field that masks the entered characters to maintain the confidentiality of the password;
+checkbox – a checkbox that can be toggled on or off, allows users to select one or more options from a list;
+radio – a radio button that belongs to a group of radio buttons (only one can be selected at a time)
+submit – a button that submits the form data and sends it to the server as specified by the action and method attributes;
+reset – a button that clears the form data and resets it to the initial values.
+For example, setting type="text" creates a field for textual input, while type="email" expects an email address, including built-in validation to ensure the input matches email format criteria.
+
+3.4.5 The <label> Element
+
+REFER TO LINES 12,13
+
+Here's what happens in our code:
+
+<label for="email">Email:</label> creates a label for the input field. The for attribute of the label is set to "email," which means this label is associated with an input element whose id attribute is "email." The text "Email:" is displayed to the user next to the input field, indicating what information is expected in the associated input field.
+<input type="email" id="email" name="useremail" required> defines an input field designed to receive an email address:
+type="email" specifies that the input should be an email address. Modern browsers will check if the entered text is in the format of an email address (e.g., user@example.com) and prompt the user if it is not.
+id="email" assigns an identifier to the input field, linking it with the label through the for attribute. This enhances accessibility, as clicking on the label will focus the input field.
+name="useremail" names the data entered into this field as "useremail," which is used to identify the form data on the server side once submitted.
+required marks the field as mandatory, meaning the form cannot be submitted without an email address entered in this field.
+
+
+-->
