@@ -33,14 +33,7 @@ h1, h2, h3 {
     background-color: oklch(0.5682 0.1011 253.06); /* Single aquamarine color for all letters */
 }
 
-/* Form Styling */
-.form-container {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
 
+/* USED:  
+https://oklch.com/#0.6602,0.1011,253.06,35.25 FOR COLOR*/
