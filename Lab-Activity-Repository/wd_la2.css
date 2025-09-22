@@ -1,0 +1,46 @@
+
+body {
+    background-color: oklch(0.8176 0.1011 253.06 / 35.25%); /* Light blue background */
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #333;
+    text-align: center;
+}
+
+
+#pixelArt {
+    margin: 30px auto;
+    border-collapse: collapse;
+}
+
+#pixelArt td {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #333;
+}
+
+/* Pixel colors for letters */
+.bg {
+    background-color: transparent; /* Background cells */
+}
+
+/* All letters - single color (aquamarine) */
+.m, .a, .r, .k, .l, .o, .u, .i, .s, .c, .n, .t, .e, .d {
+    background-color: oklch(0.5682 0.1011 253.06); /* Single aquamarine color for all letters */
+}
+
+/* Form Styling */
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
