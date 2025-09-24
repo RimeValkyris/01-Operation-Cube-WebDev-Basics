@@ -1,6 +1,6 @@
 
 body {
-    background-color: oklch(0.8176 0.1011 253.06 / 35.25%); /* Light blue background */
+    background-color: oklch(0.8176 0.1011 253.06 / 35.25%); 
     font-family: 'Arial', sans-serif;
     margin: 20px;
     padding: 20px;
@@ -23,14 +23,14 @@ h1, h2, h3 {
     border: 1px solid #333;
 }
 
-/* Pixel colors for letters */
+
 .bg {
-    background-color: transparent; /* Background cells */
+    background-color: transparent; 
 }
 
-/* All letters - single color (aquamarine) */
+
 .m, .a, .r, .k, .l, .o, .u, .i, .s, .c, .n, .t, .e, .d {
-    background-color: oklch(0.5682 0.1011 253.06); /* Single aquamarine color for all letters */
+    background-color: oklch(0.5682 0.1011 253.06); 
 }
 
 
