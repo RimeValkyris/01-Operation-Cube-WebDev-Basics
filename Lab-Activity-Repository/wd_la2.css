@@ -1,9 +1,18 @@
 
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: oklch(0.8176 0.1011 253.06 / 35.25%); 
     font-family: 'Arial', sans-serif;
-    margin: 20px;
-    padding: 20px;
+    min-height: 100%;
+    margin: 0;
+    padding: 20px 20px 0 20px;
+    position: relative;
+    padding-bottom: 60px; /* Height of the footer */
 }
 
 h1, h2, h3 {
@@ -33,7 +42,88 @@ h1, h2, h3 {
     background-color: oklch(0.5682 0.1011 253.06); 
 }
 
+.card {
+    background-color: oklch(0.5682 0.1011 253.06);
+    color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+}
 
 
-/* USED:  
-https://oklch.com/#0.6602,0.1011,253.06,35.25 FOR COLOR*/
+.card form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+}
+
+.card input[type="text"],
+.card input[type="email"],
+.card input[type="password"],
+.card select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+}
+
+
+.card input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card input[type="submit"]:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #4b79b4; 
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 60px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.footer p {
+    margin: 0;
+    font-weight: 500;
+}
+
+/* USED:
+https://oklch.com/ FOR COLOR*/
