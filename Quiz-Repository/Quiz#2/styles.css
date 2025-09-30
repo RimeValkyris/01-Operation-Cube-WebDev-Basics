@@ -1,0 +1,28 @@
+/* 
+List of CSS Selectors
+Element Selector - HTML Tag
+Class Selector - Selects all elements with a specific class attribute, defined using a period (.).
+ID Selector - Selects a single element with a unique id attribute, defined using a hash (#).
+Universal Selector - Selects all elements on a page, using an asterisk (*).
+Attribute Selector - Selects elements based on the presence or value of their attributes. FOR FORMS OR LINKS
+Group Selector - Groups multiple selectors so they can share the same style rules..
+Pseudo-class Selector - Selects elements in a specific state, such as when hovered or focused. USER INTERACTIONS
+Pseudo element Selector - Selects and styles specific parts of an element, such as the first letter or line. FOR ADVANCE TYPO AND DECORATIVE
+ */
+
+
+#QuizPract {
+    color: aqua;
+}
+
+table, td, th {
+    border: 1px solid red; /* To add border */
+    border-collapse: collapse;  /* collapses border */
+     padding: 10px; /* add spacing on text */
+}
+
+table {
+    text-align: center;
+    border-spacing: 5px;
+    
+}
