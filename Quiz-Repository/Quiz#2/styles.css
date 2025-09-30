@@ -9,7 +9,14 @@ Group Selector - Groups multiple selectors so they can share the same style rule
 Pseudo-class Selector - Selects elements in a specific state, such as when hovered or focused. USER INTERACTIONS
 Pseudo element Selector - Selects and styles specific parts of an element, such as the first letter or line. FOR ADVANCE TYPO AND DECORATIVE
  */
+h1,h2,label,td {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+} 
 
+
+body {
+    background-color: rosybrown;
+}
 
 #QuizPract {
     color: aqua;
