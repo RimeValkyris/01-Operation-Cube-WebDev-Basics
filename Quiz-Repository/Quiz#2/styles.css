@@ -24,5 +24,24 @@ table, td, th {
 table {
     text-align: center;
     border-spacing: 5px;
-    
+    background-color: bisque;
+}
+
+.HTML_Forms_Card {
+    background-color: aqua;
+    padding: 10px;
+    text-align: center;
+    max-width: 400px;
+    margin: 20px auto   ;
+    border-radius: 10px;
+}
+
+.HTML_Forms_Card form {
+    display: flex;
+    flex-direction: column;
+gap: 15px;
+}
+
+.HTML_Forms_Card label {
+    text-align: left;
 }
